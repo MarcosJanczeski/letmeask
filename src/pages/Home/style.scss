@@ -1,0 +1,73 @@
+#page-auth {
+  display: flex;
+  align-items: stretch;
+  height: 100vh;
+
+  main {
+    display: flex;
+    flex: 8;
+    align-items: center;
+    justify-content: center;
+    padding: 0 32px;
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+      max-width: 320px;
+
+      img {
+        align-self: center;
+      }
+      > button {
+        /*create with Google*/
+        background: #ea4335;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: #a8a8b3;
+        margin: 32px 0;
+
+        &::before,
+        &::after {
+          content: "";
+          flex: 1;
+          height: 1px;
+          background: #a8a8b3;
+          margin-right: 16px;
+        }
+
+        &::after {
+          margin-right: 0;
+          margin-left: 16px;
+        }
+      }
+
+      form {
+        button,
+        input {
+          width: 100%;
+        }
+        input {
+          height: 50px;
+          border-radius: 8px;
+          padding: 0 16px;
+          background: #fff;
+          border: 1px solid #a8a8b3;
+        }
+
+        button {
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+
+  img {
+    max-width: 320px;
+  }
+}
